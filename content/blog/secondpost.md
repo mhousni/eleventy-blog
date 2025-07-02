@@ -1,6 +1,6 @@
 ---
 title: This is my second post with a much longer title.
-description: This is a post on My Blog about leveraging agile frameworks.
+description: This is a post on My Blog about leveraging agile frameworks.x
 date: 2018-07-04
 draft: false
 tags:
