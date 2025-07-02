@@ -1,6 +1,6 @@
 ---
 layout: layouts/base.njk
 eleventyNavigation:
-  key: home-about-section
+  key: hero
 ---
 im testinh home section about
