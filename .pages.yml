@@ -41,19 +41,6 @@ content:
           - { name: key, label: Key, type: string }
           - { name: order, label: Order, type: number }
       - { name: body, label: Body, type: rich-text }
-  - name: about-home
-    label: About section home
-    type: file
-    path: content/about-home/index.md
-    fields:
-      - { name: layout, type: string, hidden: true, default: layouts/base.njk }
-      - name: eleventyNavigation
-        label: Navigation
-        type: object
-        fields:
-          - { name: key, label: Key, type: string }
-          - { name: order, label: Order, type: number }
-      - { name: body, label: Body, type: rich-text }
   - name: metadata
     label: Metadata
     type: file
