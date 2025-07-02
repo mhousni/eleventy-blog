@@ -280,7 +280,14 @@ h2 + .header-anchor {
 }
 .slider {
 	min-height: 600px;
-	background: #000;
+	/* background: #000; */
+	    height: 650px;
+    min-height: 550px;
+}
+.slider .carousel-inner img {
+	height: 650px;
+    min-height: 550px;
+	width: 100%;
 }
 .copyright-footer {
 	    padding: 2.5rem 1rem;
