@@ -3,4 +3,4 @@ layout: layouts/base.njk
 eleventyNavigation:
   key: hero
 ---
-im testinh home section about
+im testinh home section about hero
