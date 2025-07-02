@@ -52,7 +52,8 @@ content:
         fields:
           - { name: key, label: Key, type: string }
           - { name: order, label: Order, type: number }
-      - { name: body, label: Body, type: rich-text }
+          - { name: body, label: Body, type: rich-text }
+          - { name: hero, label: Hero }
   - name: metadata
     label: Metadata
     type: file
