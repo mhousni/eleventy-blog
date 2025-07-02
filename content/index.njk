@@ -3,7 +3,8 @@ layout: layouts/home.njk
 eleventyNavigation:
   key: Home
   order: 1
-numberOfLatestPostsToShow: 3
+numberOfLatestPostsToShow: 5
+numberOfLatestEventsToShow: 5
 ---
 <div class="events">
 	<div class="container">
@@ -20,6 +21,20 @@ numberOfLatestPostsToShow: 3
 {% if morePosts > 0 %}
 <p>{{ morePosts }} more post{% if morePosts != 1 %}s{% endif %} can be found in <a href="/blog/">the archive</a>.</p>
 {% endif %} #}
+		</div>
+	</div>
+</div>
+
+<div class="events">
+	<div class="container">
+		<div class="ro">
+			{% set eventsCount = collections.events | length %}
+{% set latestEventsCount = eventsCount | min(numberOfLatestEventsToShow) %}
+
+{% set eventslist = collections.events | head(-1 * numberOfLatestEventsToShow) %}
+{% set eventslistCounter = eventsCount %}
+{% include "eventslist.njk" %}
+
 		</div>
 	</div>
 </div>
