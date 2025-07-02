@@ -36,6 +36,7 @@ module.exports = function(eleventyConfig) {
 	eleventyConfig.addPlugin(pluginNavigation);
 	eleventyConfig.addPlugin(EleventyHtmlBasePlugin);
 	eleventyConfig.addPlugin(pluginBundle);
+	eleventyConfig.addPassthroughCopy("lib/");
 
 	// Filters
 	eleventyConfig.addFilter("readableDate", (dateObj, format, zone) => {

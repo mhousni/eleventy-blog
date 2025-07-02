@@ -19,6 +19,16 @@
 
 	--syntax-tab-size: 2;
 }
+a{
+	text-decoration: none !important;
+}
+.text-primary{
+	color: #333 !important;
+}
+
+header{
+	background-color: #fff;
+}
 
 @media (prefers-color-scheme: dark) {
 	:root {
@@ -31,7 +41,7 @@
 		--text-color-link-active: #6969f7;
 		--text-color-link-visited: #a6a6f8;
 
-		--background-color: #15202b;
+		--background-color: #f1f1f1;
 	}
 }
 
@@ -53,7 +63,7 @@ html {
 	overflow-y: scroll;
 }
 body {
-	max-width: 40em;
+	
 }
 
 /* https://www.a11yproject.com/posts/how-to-hide-content/ */
@@ -90,7 +100,7 @@ a[href]:active {
 }
 
 main {
-	padding: 1rem;
+	/* padding: 1rem; */
 }
 main :first-child {
 	margin-top: 0;
@@ -267,4 +277,14 @@ a[href].header-anchor:focus,
 
 h2 + .header-anchor {
 	font-size: 1.5em;
+}
+.slider {
+	min-height: 600px;
+	background: #000;
+}
+.copyright-footer {
+	    padding: 2.5rem 1rem;
+    border-top: 1px solid #1f3d56;
+    text-align: center;
+    background-color: black;
 }
