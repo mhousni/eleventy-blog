@@ -50,28 +50,54 @@
 		<header >
 			<div class="container ">
 				<div class="row">
-					 <div class="col col-lg-3">
+					 <div class="col-12  col-lg-3">
 						<a href="/" class="home-link"><img class="img-fluid"  src="/img/web-logo-diamond-Revc.png" alt="{{ metadata.title }}"/></a>
 					</div>
-					<div class="col col-lg-9 d-flex align-items-center">
-						<nav class=" d-flex flex-column gap-3">
+					<div class="col-12 col-lg-9 menu-nav-header ">
+						<nav class="navbar navbar-expand-lg navbar-light">
+							<div class="container-fluid">
+								{# <a class="navbar-brand" href="#">Navbar</a> #}
+								<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+								<span class="navbar-toggler-icon"></span>
+								</button>
+								<div class="collapse navbar-collapse" id="navbarNav">
+								<ul class="navbar-nav">
+									<li class="nav-item">
+									<a class="nav-link fw-bold active" aria-current="page" href="#">Home</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="#">Property Search</a>
+									</li>
+									<li class="nav-item">
+									<a class="nav-link" href="#">Commercial</a>
+									</li>
+									<li class="nav-item">
+									<a class="nav-link " href="#" >Farm Land</a>
+									</li>
+								</ul>
+								</div>
+							</div>
+						</nav>
+						<h2 class="text-primary display-6 " >NJ & Fla R.E. Owner/Broker - 4605 B Nottingham Way Hamilton, NJ 08690</h2>
+						{# <nav class=" d-flex flex-column gap-3">
 					
 							<ul class="nav d-flex  gap-3">
-							{# {%- for entry in collections.all | eleventyNavigation %}
+							{%- for entry in collections.all | eleventyNavigation %}
 								<li class="nav-item"><a href="{{ entry.url }}"{% if entry.url == page.url %} aria-current="page"{% endif %}>{{ entry.title }}</a></li>
-							{%- endfor %} #}
+							{%- endfor %}
 								<li class="nav-item"><a href="#" class=" text-primary fs-xl">Home </a></li>
 								<li class="nav-item"><a href="#" class=" text-primary fs-xl">Property Search </a></li>
 								<li class="nav-item"><a href="#" class=" text-primary fs-xl">Commercial</a></li>
 								<li class="nav-item"><a href="#" class=" text-primary fs-xl">Farm Land</a></li>
 
 							</ul>
-							<h2 class="text-primary display-6" >NJ & Fla R.E. Owner/Broker - 4605 B Nottingham Way Hamilton, NJ 08690</h2>
-						</nav>
+							
+						</nav> #}
 					</div>
 				
 
 				</div>
+
 			</div>
 		</header>
 
@@ -83,9 +109,9 @@
 			<div class="top-footer p-4">
 				<div class="container">
         <div class="row">
-           <div class="col ">
+           <div class="col col-12 col-lg-4 ">
             <h2 class="text-uppercase">Karen L. Dippolito</h2>
-			<div class="content d-flex gap-2">
+			<div class="content d-block d-lg-flex  gap-2">
 				<img src="img/profile.jpg" alt="">
 				<ul class="d-flex flex-column gap-2 list-unstyled">
 				<li><a href="" class="text-white text-decoration-none">609-588-6888</a></li>
@@ -94,11 +120,11 @@
 				</ul>
 			</div>
         </div>
-        <div class="col">
+        <div class="col col-12 col-lg-4">
             <p>An Equal Opportunity Company. Equal Housing Opportunity. All rights reserved. Subject to errors and omissions. List with Diamond Homes Realty, we have buyers</p>
 			<p>2018 © Diamond Homes Realty, all rights reserved</p>
         </div>
-		 <div class="col">
+		 <div class="col col-12 col-lg-4">
             <h2 class="text-uppercase">Contact us</h2>
         </div>
         </div>

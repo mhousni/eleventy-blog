@@ -295,3 +295,15 @@ h2 + .header-anchor {
     text-align: center;
     background-color: black;
 }
+
+
+
+.menu-nav-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+.menu-nav-header h2{
+    font-size: 15px !important;
+}
