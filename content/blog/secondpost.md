@@ -5,7 +5,7 @@ date: 2018-07-04
 draft: false
 tags:
   - number 2
-cover: /public/img/monmouthlogoa-300x257.png
+cover: /img/burlingtonlogoa-1.png
 ---
 Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.
 
