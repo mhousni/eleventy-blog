@@ -1,6 +1,6 @@
 ---
 title: Mercer-County
-description: tex
+description: texx
 date: 2023-01-23
 draft: false
 cover: /public/img/mercerlogoa.png
