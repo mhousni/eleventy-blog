@@ -3,7 +3,7 @@ title: OPEN HOUSE TODAY @ THE LOFTS in Robbinsville, $189,900 Call Diamond Homes
   Realty 609-588-6888
 draft: false
 featured: true
-cover: /img/61610618_2459538887424809_1682516286740889600_n.jpg
+cover: /img/book-10.jpg
 ---
 OPEN HOUSE TODAY @ THE LOFTS in Robbinsville, $189,900
 
