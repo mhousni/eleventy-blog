@@ -1,13 +1,13 @@
 {%- css %}.postlist { counter-reset: start-from {{ (postslistCounter or postslist.length) + 1 }} }{% endcss %}
 <ol reversed class="postlist d-flex">
 {% for post in postslist | reverse %}
-{# {% if post.data.featured == false %} #}
+{% if post.data.featured == false %}
 	<li class="postlist-item{% if post.url == url %} postlist-item-active{% endif %}">
 		<a href="{{ post.url }}" class="postlist-link">
 			{# {% if post.data.title %}
 			{{ post.data.title }}{% else %}<code>{{ post.url }}</code>
 			{% endif %} #}
-			{{post.data.featured}}
+			
 			{% if post.data.cover %}
 			<img width="200px" class="img-fluid" src="{{ post.data.cover }}" alt="{{ post.data.title }}">
 			{% endif %}
@@ -15,6 +15,6 @@
 		
 		{# <time class="postlist-date" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate("LLLL yyyy") }}</time> #}
 	</li>
-	{# {% endif %} #}
+	{% endif %}
 {% endfor %}
 </ol>
