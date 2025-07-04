@@ -1,6 +1,6 @@
 media: img
 components:
-  hero: # 'hero' is the component name/key
+  hero: # 'hero' is the component name/key 
     label: About Section
     type: object
     fields:
