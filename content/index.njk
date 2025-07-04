@@ -7,46 +7,19 @@ numberOfLatestPostsToShow: 5
 numberOfLatestEventsToShow: 5
 ---
 
-<div class="events">
-	<div class="container">
-		<div class="ro">
 			{% set postsCount = collections.posts | length %}
 {% set latestPostsCount = postsCount | min(numberOfLatestPostsToShow) %}
 {# <h1>Latest {{ latestPostsCount }} Post{% if latestPostsCount != 1 %}s{% endif %}</h1> #}
 
 {% set postslist = collections.posts | head(-1 * numberOfLatestPostsToShow) %}
 {% set postslistCounter = postsCount %}
-
+<div class="row p-4">
 {% include "featuredpost.njk" %}
+</div>
+<div class="row p-4">
 {% include "postslist.njk" %}
-
-{# {% set morePosts = postsCount - numberOfLatestPostsToShow %}
-{% if morePosts > 0 %}
-<p>{{ morePosts }} more post{% if morePosts != 1 %}s{% endif %} can be found in <a href="/blog/">the archive</a>.</p>
-{% endif %} #}
-		</div>
-	</div>
 </div>
 
-<div class="events">
-	<div class="container">
-		<div class="ro">
-			{% set eventsCount = collections.evenments | length %}
-{% set latestEventsCount = eventsCount | min(numberOfLatestEventsToShow) %}
 
-{% set eventslist = collections.evenments | head(-1 * numberOfLatestEventsToShow) %}
-{% set eventslistCounter = eventsCount %}
-{% include "eventslist.njk" %}
 
-		</div>
-	</div>
-</div>
 
-{# List every content page in the project #}
-{#
-<ul>
-	{%- for entry in collections.all %}
-	<li><a href="{{ entry.url }}"><code>{{ entry.url }}</code></a></li>
-	{%- endfor %}
-</ul>
-#}
