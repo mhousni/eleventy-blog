@@ -2,18 +2,22 @@
 
 {% for post in postslist | reverse %}
 {% if post.data.featured == true %}
+<a class="text-dark fs-4 pb-3" href="{{ post.url }}" class="postlist-link">
+			{% if post.data.title %}
+			{{ post.data.title }}
+			{% endif %}
+			
+	</a>
 <div class="col">
 	{% if post.data.cover %}
 	<img class="img-fluid" src="{{ post.data.cover }}" alt="{{ post.data.title }}">
 	{% endif %}
 </div>
 <div class="col">
-	<a class="text-dark" href="{{ post.url }}" class="postlist-link">
-			{% if post.data.title %}
-			{{ post.data.title }}
-			{% endif %}
-			
-	</a>
+	<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque consectetur dolorem porro facere praesentium mollitia iure, reiciendis quod saepe corporis. Ratione quaerat laborum repellat quo hic, totam aspernatur dolore odit?
+	</p>
+	<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque consectetur dolorem porro facere praesentium mollitia iure, reiciendis quod saepe corporis. Ratione quaerat laborum repellat quo hic, totam aspernatur dolore odit?
+	</p>
 	{# {% if post.data.title %}
 			{{ post.data.title | safe }}
 	{% endif %} #}

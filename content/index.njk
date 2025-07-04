@@ -14,11 +14,13 @@ numberOfLatestEventsToShow: 5
 {% set postslist = collections.posts | head(-1 * numberOfLatestPostsToShow) %}
 {% set postslistCounter = postsCount %}
 <div class="row p-4">
+  <h1 class="text-dark fw-bold pb-3">NEWS</h1>
 {% include "featuredpost.njk" %}
 </div>
 <div class="row p-4">
 {% include "postslist.njk" %}
-</div>
+<a href="#" class="text-dark fw-bold pb-3 d-flex justify-content-end">EXPLORE MORE</h1>
+</a>
 
 
 
