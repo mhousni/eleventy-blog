@@ -2,6 +2,6 @@
 title: this is a test n2
 draft: false
 featured: false
-cover: /img/xxmercerlogoa.png
+cover: /public/monmouthlogoa-300x257.png
 ---
 test description body
