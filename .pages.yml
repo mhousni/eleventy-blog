@@ -23,6 +23,7 @@ content:
       - { name: description, label: Description, type: string }
       - { name: date, label: Date, type: date }
       - { name: draft, label: Draft, type: boolean }
+      - { name: featured, label: Featured, type: boolean, default: false }
       - { name: tags, label: Tags, type: string, list: true }
       - { name: body, label: Body, type: rich-text }
       - {  name: cover, label: Cover Image, type: image}
