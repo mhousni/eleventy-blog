@@ -296,9 +296,8 @@ h2 + .header-anchor {
     background-color: black;
 }
 
-
-
-.menu-nav-header{
+@media only screen and (max-width: 600px) {
+  .menu-nav-header{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -307,3 +306,6 @@ h2 + .header-anchor {
 .menu-nav-header h2{
     font-size: 15px !important;
 }
+}
+
+

@@ -6,6 +6,7 @@ eleventyNavigation:
 numberOfLatestPostsToShow: 5
 numberOfLatestEventsToShow: 5
 ---
+
 <div class="events">
 	<div class="container">
 		<div class="ro">
@@ -15,6 +16,8 @@ numberOfLatestEventsToShow: 5
 
 {% set postslist = collections.posts | head(-1 * numberOfLatestPostsToShow) %}
 {% set postslistCounter = postsCount %}
+
+{% include "featuredpost.njk" %}
 {% include "postslist.njk" %}
 
 {# {% set morePosts = postsCount - numberOfLatestPostsToShow %}
@@ -28,10 +31,10 @@ numberOfLatestEventsToShow: 5
 <div class="events">
 	<div class="container">
 		<div class="ro">
-			{% set eventsCount = collections.events | length %}
+			{% set eventsCount = collections.evenments | length %}
 {% set latestEventsCount = eventsCount | min(numberOfLatestEventsToShow) %}
 
-{% set eventslist = collections.events | head(-1 * numberOfLatestEventsToShow) %}
+{% set eventslist = collections.evenments | head(-1 * numberOfLatestEventsToShow) %}
 {% set eventslistCounter = eventsCount %}
 {% include "eventslist.njk" %}
 

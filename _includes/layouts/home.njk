@@ -53,12 +53,30 @@ layout: layouts/base.njk
             <div class="col-12 col-lg-6 pb-4">
                 {# {% include "home-about-section" %} #}
             <h1 class="text-primary">Welcome</h1>
-            <div class="text-primary">
+            <div class="text-primary pb-3">
             <p>Diamond Homes Realty, an independent real estate brokerage, property management, and development firm based in Hamilton NJ is redefining the real estate experience.</p>
             <p>With the underlying belief that no two clients and no two real estate transactions are alike, each Diamond Homes&nbsp; transaction is uniquely personalized and perfectly tailored to provide our clients an unparalleled level of service.</p>
             <p>Driven by the principles of quality, honesty, collaboration, and transparency, the Diamond Homes Realty team of professionals are experts in their market and combine the latest technologies and innovative sales and marketing strategies designed to execute our plan, drive results, and exceed our client’s expectations.</p>
             <p>An exceptional real estate experience - It is our passion, and our promise.</p>
             </div>
+            {# <div>
+                <a class="bg-light text-dark" href="tel:+16466198058" style="padding: 10px 18px;
+      border: 1px solid #F44336;
+      border-radius: 25px;
+      color: #fff;
+      font-weight: bold;">Call us : +1 6095 886 888 </a>
+            </div> #}
+            <div class="bg-light order-2  order-lg-2" style="padding: 10px 18px;
+      border: 1px solid #f1f1f1;
+      border-radius: 25px;
+      color: #fff;
+      font-weight: bold; ">
+						<span class="ps-4 text-danger fs-3 fw-bold  ">
+							<i class="fa fa-phone"></i> CALL US NOW : +1 6095 886 888 
+						</span>
+						{# <a href="tel::6095886888" class="btn "><img class="img-fluid" src="img/web-logo-diamond-Revc-1.png" alt=""></a> #}
+					</div>
+            
         </div>
         <div class="col-12 col-lg-6 position-relative">
              <div class="bg-video position-absolute w-100 h-100 z-11">
@@ -77,4 +95,18 @@ layout: layouts/base.njk
         </div>
     </div>
 </section>
-{{ content | safe }}
+<section class="events p-5 bg-white">
+    <div class="container">
+        <h2>test</h2>
+        <div class="row">
+            <div class="col">hello</div>
+            <div class="col">hello</div>
+            
+        </div>
+        <div class="row">
+           
+            {{ content | safe }}
+        </div>
+    </div>
+</section>
+
