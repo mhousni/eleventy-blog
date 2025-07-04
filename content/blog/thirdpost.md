@@ -1,8 +1,9 @@
 ---
 title: This is my third post.
-description: This is a post on My Blog about win-win survival strategies.x
+description: This is a post on My Blog about win-win survival strategies.
 date: 2018-08-24
 draft: false
+featured: false
 tags:
   - second tag
   - posts with two tags
