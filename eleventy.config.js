@@ -16,7 +16,7 @@ module.exports = function(eleventyConfig) {
 	eleventyConfig.addPassthroughCopy({
 		"./public/": "/",
 		"./img/": "./public/img",
-		// "./public/": "./_site/img",
+		"./public/img": "./_site/img",
 		"./node_modules/prismjs/themes/prism-okaidia.css": "/css/prism-okaidia.css"
 	});
 	// eleventyConfig.addPassthroughCopy("img");
