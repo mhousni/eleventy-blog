@@ -1,4 +1,4 @@
-media: public
+media: img
 components:
   hero: # 'hero' is the component name/key
     label: About Section
