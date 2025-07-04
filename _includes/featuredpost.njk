@@ -8,12 +8,15 @@
 	{% endif %}
 </div>
 <div class="col">
-	<a href="{{ post.url }}" class="postlist-link">
+	<a class="text-dark" href="{{ post.url }}" class="postlist-link">
 			{% if post.data.title %}
-			{{ post.data.title }}{% else %}<code>{{ post.url }}</code>
+			{{ post.data.title }}
 			{% endif %}
 			
-		</a>
+	</a>
+	{# {% if post.data.title %}
+			{{ post.data.title | safe }}
+	{% endif %} #}
 </div>
 
 

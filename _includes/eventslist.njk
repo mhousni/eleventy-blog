@@ -1,6 +1,7 @@
 {%- css %}.eventlist { counter-reset: start-from {{ (eventslistCounter or eventslist.length) + 1 }} }{% endcss %}
 <ol reversed class="eventlist d-flex">
 {% for event in eventslist | reverse %}
+{% if post.data.featured == false %}
 	<li class="eventlist-item{% if event.url == url %} eventlist-item-active{% endif %}">
 		<a href="{{ event.url }}" class="eventlist-link">
 			{# {% if post.data.title %}
@@ -13,5 +14,6 @@
 		
 		{# <time class="postlist-date" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate("LLLL yyyy") }}</time> #}
 	</li>
+	{% endif %}
 {% endfor %}
 </ol>
