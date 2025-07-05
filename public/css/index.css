@@ -4,6 +4,7 @@
 	--font-family-monospace: Consolas, Menlo, Monaco, Andale Mono WT, Andale Mono, Lucida Console, Lucida Sans Typewriter, DejaVu Sans Mono, Bitstream Vera Sans Mono, Liberation Mono, Nimbus Mono L, Courier New, Courier, monospace;
 }
 
+
 /* Theme colors */
 :root {
 	--color-gray-20: #e0e0e0;
@@ -305,6 +306,34 @@ h2 + .header-anchor {
 }
 .menu-nav-header h2{
     font-size: 15px !important;
+}
+
+.slider .carousel-inner img {
+    height: 400px;
+    min-height: 400px;
+    width: 100%;
+}
+.slider{
+	height: 400px;
+	min-height: 400px;
+	width: 100%;
+}
+.postlist-item a img{
+	width: 100%;
+}
+.navbar-collapse {
+	display: block;
+    position: absolute;
+    background: #fff;
+    /* width: 110%; */
+    min-width: 300px;
+    padding-top: 10px;
+}
+.collapse:not(.show) {
+    display: block;
+}
+.call-now{
+	text-align: center;
 }
 }
 

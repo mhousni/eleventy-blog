@@ -51,7 +51,14 @@ module.exports = function(eleventyConfig) {
 		// dateObj input: https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-date-string
 		return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat('yyyy-LL-dd');
 	});
+	eleventyConfig.addFilter("toJson", (dateObj) => {
+		// Formatting tokens for Luxon: https://moment.github.io/luxon/#/formatting?id=table-of-tokens
+		console.log("JSON.stringify(dateObj)")
+		return JSON.stringify(dateObj);
+		// console.log(JSON.stringify(dateObj))
+		// return true;
 
+	});
 	// Get the first `n` elements of a collection.
 	eleventyConfig.addFilter("head", (array, n) => {
 		if(!Array.isArray(array) || array.length === 0) {

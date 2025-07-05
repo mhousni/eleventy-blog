@@ -47,6 +47,17 @@ module.exports = function(eleventyConfig) {
 		return DateTime.fromJSDate(dateObj, { zone: zone || "utc" }).toFormat(format || "dd LLLL yyyy");
 	});
 
+
+	eleventyConfig.addFilter("toJson", (dateObj) => {
+		// Formatting tokens for Luxon: https://moment.github.io/luxon/#/formatting?id=table-of-tokens
+		// return JSON.stringify(dateObj);
+		console.log("JSON.stringify(dateObj)")
+		return JSON.stringify(dateObj);
+
+	});
+
+
+
 	eleventyConfig.addFilter('htmlDateString', (dateObj) => {
 		// dateObj input: https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-date-string
 		return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat('yyyy-LL-dd');

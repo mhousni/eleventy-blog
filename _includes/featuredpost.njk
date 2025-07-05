@@ -8,16 +8,14 @@
 			{% endif %}
 			
 	</a>
-<div class="col">
+<div class="col-12 col-lg-6 ">
 	{% if post.data.cover %}
 	<img class="img-fluid" src="{{ post.data.cover }}" alt="{{ post.data.title }}">
 	{% endif %}
 </div>
-<div class="col">
-	<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque consectetur dolorem porro facere praesentium mollitia iure, reiciendis quod saepe corporis. Ratione quaerat laborum repellat quo hic, totam aspernatur dolore odit?
-	</p>
-	<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque consectetur dolorem porro facere praesentium mollitia iure, reiciendis quod saepe corporis. Ratione quaerat laborum repellat quo hic, totam aspernatur dolore odit?
-	</p>
+<div class="col-12 col-lg-6">
+	{{ post.content | safe }}
+
 	{# {% if post.data.title %}
 			{{ post.data.title | safe }}
 	{% endif %} #}

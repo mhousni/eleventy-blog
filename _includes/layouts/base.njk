@@ -57,10 +57,11 @@
 						<nav class="navbar navbar-expand-lg navbar-light d-flex justify-content-between">
 							<div class="w-100 ">
 								{# <a class="navbar-brand" href="#">Navbar</a> #}
-								<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+								{# data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" #}
+								<button class="navbar-toggler" type="button" >
 								<span class="navbar-toggler-icon"></span>
 								</button>
-								<div class="collapse navbar-collapse" id="navbarNav">
+								<div class="collapse navbar-collapse d-none d-lg-flex" id="navbarNav">
 								<ul class="navbar-nav d-flex">
 									{# <li class="nav-item">
 									<a class="nav-link fw-bold active" aria-current="page" href="#">Home</a>
@@ -99,9 +100,9 @@
 						</nav> #}
 					</div>
 					<div class="col-12  col-lg-3 bg-light order-2  order-lg-2">
-						<span class="ps-4 text-danger fs-3 fw-bold  ">
+						<a href="tel::6095886888" class="ps-4 text-danger fs-3 fw-bold text-center w-100 d-block  ">
 							CALL US NOW <i class="fa fa-phone"></i>
-						</span>
+						</a>
 						<a href="tel::6095886888" class="btn "><img class="img-fluid" src="img/web-logo-diamond-Revc-1.png" alt=""/></a>
 					</div>
 
@@ -118,41 +119,50 @@
 			<div class="top-footer p-4">
 				<div class="container">
         <div class="row">
-           <div class="col col-12 col-lg-4 ">
-            <h2 class="text-uppercase">Karen L. Dippolito</h2>
-			<div class="content d-block d-lg-flex  gap-2">
-				<img src="img/profile.jpg" alt="">
-				<ul class="d-flex flex-column gap-2 list-unstyled">
-				<li><a href="" class="text-white text-decoration-none">609-588-6888</a></li>
-				<li><a href="" class="text-white text-decoration-none">diamondip1@aol.com</a></li>
-				<li><a href="" class="text-white text-decoration-none">NJ & FLA R.E. BROKER</a></li>
-				</ul>
+			<div class="col col-12 col-lg-4  d-flex flex-column gap-2">
+				<h2 class="text-uppercase">Karen L. Dippolito</h2>
+				<div class="content d-block d-flex flex-column flex-lg-row d-lg-flex  gap-2">
+					<img src="img/profile.jpg" alt="">
+					<ul class="d-flex flex-column gap-2 list-unstyled">
+					<li><a href="tel:6095886888" class="text-white text-decoration-none"><i class="fa fa-phone"></i> 609-588-6888</a></li>
+					<li><a href="mailto:diamondip1@aol.com" class="text-white text-decoration-none"><i class="fa fa-envelope"></i> diamondip1@aol.com</a></li>
+					<li><a href="/" class="text-white text-decoration-none"><i class="fa fa-home"></i> NJ & FLA R.E. BROKER</a></li>
+					</ul>
+				</div>
 			</div>
-        </div>
         <div class="col col-12 col-lg-4">
-            <p>An Equal Opportunity Company. Equal Housing Opportunity. All rights reserved. Subject to errors and omissions. List with Diamond Homes Realty, we have buyers</p>
-			<p>2018 © Diamond Homes Realty, all rights reserved</p>
+            <p class="blockquote">An Equal Opportunity Company. Equal Housing Opportunity. All rights reserved. Subject to errors and omissions. List with Diamond Homes Realty, we have buyers</p>
+			
         </div>
-		 <div class="col col-12 col-lg-4">
+		 <div class="col col-12 col-lg-4 pt-2">
             <h2 class="text-uppercase">Contact us</h2>
+			<p>Karen L. Dippolito, NJ/FL Broker, Diamond Homes Realty. <br>NJ & Fla R.E. Owner/Broker </p>
+			<span class="text-danger">ADDRESS :</span>
+			<p><a class="text-white" target="_blank" href="https://maps.app.goo.gl/PRn39AJx72HH7rKeA">4605 B Nottingham Way, Hamilton Square, NJ 08690, United States</a></p>
+			<span class="text-danger">PHONE:</span>
+			<p><a class="text-white" target="_blank" href="tel:+16099477737">609 947 7737</a></p>
+			<span class="text-danger">EMAIL:</span>
+			<p><a class="text-white" target="_blank" href="mailto:diamondip1@aol.com">diamondip1@aol.com</a></p>
         </div>
         </div>
     </div>
 			</div>
 			<div class="copyright-footer">
             
-            <div class="container d-flex justify-content-between">
-                <div class="copyright">
-                    Copyright © 2014-2025 Petoskey Stone Tile &amp; More | Website developed &amp;
+            <div class="container ">
+                <div class="row">
+					<div class="col-12 col-lg-8 copyright text-start pb-3">
+                    2018 © Diamond Homes Realty, all rights reserved | Website developed &amp;
                     hosted by
                     <a class="text-white" href="https://schrader.co/"> Schrader Web Solutions </a>
-                </div>
+                	</div>
 
-                <div class="copyright">
-                    <a href="#" class="text-white" >Privacy Policy</a>
-                    |
-                    <a href="#" class="text-white" >Terms Conditions</a>
-                </div>
+					<div class="col-12 col-lg-4 copyright d-flex justify-content-lg-end">
+						<a href="#" class="text-white" >Privacy Policy</a>
+						|
+						<a href="#" class="text-white" >Terms Conditions</a>
+					</div>
+				</div>
             </div>
         </div>
 		</footer>
@@ -168,7 +178,10 @@
     <script src="/lib/slick/slick.min.js"></script>
 		<script>
 			new WOW().init();
-    
+			const btnNav = document.querySelector(".navbar-toggler");
+			btnNav.addEventListener("click",()=>{
+				document.querySelector(".navbar-collapse").classList.toggle("d-none");
+			})
 		</script>
 		<!-- Current page: {{ page.url | htmlBaseUrl }} -->
 	</body>
