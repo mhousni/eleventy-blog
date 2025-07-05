@@ -1,6 +1,6 @@
 media:
   input: public/img
-  output: /public/img
+  output: img
 components:
   hero: # 'hero' is the component name/key 
     label: About Section
