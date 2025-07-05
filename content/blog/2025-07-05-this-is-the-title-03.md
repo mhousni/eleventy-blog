@@ -1,5 +1,6 @@
 ---
 title: this is the title 03
+description: ss
 draft: false
 featured: false
 cover: /img/pc-near-me-logo.png
