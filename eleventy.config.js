@@ -15,8 +15,8 @@ module.exports = function(eleventyConfig) {
 	// For example, `./public/css/` ends up in `_site/css/`
 	eleventyConfig.addPassthroughCopy({
 		"./public/": "/",
-		"./img/": "./public/img",
-		"./public/img": "./_site/img",
+		// "./img/": "./public/img",
+		// "./public/img": "./_site/img",
 		"./node_modules/prismjs/themes/prism-okaidia.css": "/css/prism-okaidia.css"
 	});
 	// eleventyConfig.addPassthroughCopy("img");
